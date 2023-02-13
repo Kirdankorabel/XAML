@@ -1,0 +1,264 @@
+﻿<Page x:Class="Window2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfApp2"
+      mc:Ignorable="d"
+    FontFamily="./#Oxygen, ./#FontopoNIHONGO"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+	<Page.Resources>
+		<Style TargetType="{x:Type Border}">
+			<Setter Property="Background" Value="Bisque" />
+			<Setter Property="TextBlock.FontSize" Value="7" />
+			<Setter Property="BorderBrush" Value="Black" />
+			<Setter Property="BorderThickness" Value="1" />
+			<Setter Property="HorizontalAlignment" Value="Stretch" />
+		</Style>	
+	</Page.Resources>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="2*"></ColumnDefinition>
+			<ColumnDefinition Width="3*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Border Grid.Column="0"></Border>
+		<Border Grid.Column="1"></Border>
+		<Border Grid.Column="2"></Border>
+		<Border Grid.Column="3"></Border>
+
+		<Grid Grid.Column="0">
+			<Grid.RowDefinitions>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition Height=" 2*"></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition Height="4*"></RowDefinition>
+				<RowDefinition Height="7*"></RowDefinition>
+			</Grid.RowDefinitions>
+
+			<Border Grid.Row="0">
+				<TextBlock Text="№ цілі," TextAlignment="Center" />
+			</Border>
+			<Border Grid.Row="1">
+				<TextBlock Text="НБЖ tр, с" TextAlignment="Center" />
+			</Border>
+			<Border Grid.Row="2">
+				<TextBlock Text="НБЖ tск,с" TextAlignment="Center" />
+			</Border>
+			<Border Grid.Row="3">
+				<TextBlock Text="Ціль" TextAlignment="Center" />
+			</Border>
+			<Border Grid.Row="4">
+				<TextBlock Text="Vц, м/с" TextAlignment="Center" />
+			</Border>
+			<Border Grid.Row="6">
+				<TextBlock Text="ФОН" TextAlignment="Center" />
+			</Border>
+			<Border Grid.Row="7">
+				<TextBlock Text="tзах , с" TextAlignment="Center" />
+			</Border>
+
+			<Grid Grid.Row="5">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition></ColumnDefinition>
+					<ColumnDefinition></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+
+				<Border Grid.Column="0">
+					<TextBlock Text="ЦУ" TextAlignment="Center" />
+				</Border>
+				<Border Grid.Column="1"></Border>
+
+				<Grid Grid.Column="1">
+					<Grid.RowDefinitions>
+						<RowDefinition></RowDefinition>
+						<RowDefinition></RowDefinition>
+					</Grid.RowDefinitions>
+					<Border Grid.Row="0">
+						<TextBlock Text="Дц, м" TextAlignment="Center" />
+					</Border>
+					<Border Grid.Row="1">
+						<TextBlock Text="βц ," TextAlignment="Center" />
+					</Border>
+				</Grid>
+			</Grid>
+			<Grid Grid.Row="8">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition></ColumnDefinition>
+					<ColumnDefinition></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+
+				<Border Grid.Column="0">
+					<TextBlock Text="Пуск" TextAlignment="Center" />
+				</Border>
+				<Border Grid.Column="1"></Border>
+
+				<Grid Grid.Column="1">
+					<Grid.RowDefinitions>
+						<RowDefinition></RowDefinition>
+						<RowDefinition></RowDefinition>
+						<RowDefinition></RowDefinition>
+						<RowDefinition></RowDefinition>
+					</Grid.RowDefinitions>
+					<Border Grid.Row="0">
+						<TextBlock Text="Дц, м" TextAlignment="Center" />
+					</Border>
+					<Border Grid.Row="1">
+						<TextBlock Text="Рц, м" TextAlignment="Center" />
+					</Border>
+					<Border Grid.Row="2">
+						<TextBlock Text="Нц, м" TextAlignment="Center" />
+					</Border>
+					<Border Grid.Row="3">
+						<TextBlock Text="tп" TextAlignment="Center" />
+					</Border>
+				</Grid>
+			</Grid>
+			<Grid Grid.Row="9">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition></ColumnDefinition>
+					<ColumnDefinition></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+
+				<Border Grid.Column="0">
+					<TextBlock Text="Знищено/Промах" TextAlignment="Center" />
+				</Border>
+				<Border Grid.Column="1"></Border>
+
+				<Grid Grid.Column="1">
+					<Grid.RowDefinitions>
+						<RowDefinition></RowDefinition>
+						<RowDefinition></RowDefinition>
+						<RowDefinition></RowDefinition>
+						<RowDefinition></RowDefinition>
+						<RowDefinition></RowDefinition>
+						<RowDefinition></RowDefinition>
+						<RowDefinition></RowDefinition>
+					</Grid.RowDefinitions>
+					<Border Grid.Row="0">
+						<TextBlock Text="Дц, м" TextAlignment="Center" />
+					</Border>
+					<Border Grid.Row="1">
+						<TextBlock Text="Рц, м" TextAlignment="Center" />
+					</Border>
+					<Border Grid.Row="2">
+						<TextBlock Text="Нц, м" TextAlignment="Center" />
+					</Border>
+					<Border Grid.Row="3">
+						<TextBlock Text="каное" TextAlignment="Center" />
+					</Border>
+					<Border Grid.Row="4">
+						<TextBlock Text="сонце" TextAlignment="Center" />
+					</Border>
+					<Border Grid.Row="5">
+						<TextBlock Text="ХТЦ" TextAlignment="Center" />
+					</Border>
+					<Border Grid.Row="6">
+						<TextBlock Text="εпуску" TextAlignment="Center" />
+					</Border>
+				</Grid>
+			</Grid>
+		</Grid>
+		<Grid Grid.Column=" 1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+			</Grid.RowDefinitions>
+
+			<Border Grid.Column="0" Grid.Row="0">
+				<TextBlock Text="1 ," TextAlignment="Center" />
+			</Border>
+			<Border Grid.Column="1" Grid.Row="0">
+				<TextBlock Text="2 ," TextAlignment="Center" />
+			</Border>
+			<Border Grid.Column="2" Grid.Row="0">
+				<TextBlock Text="3 ," TextAlignment="Center" />
+			</Border>
+			<Border Grid.Column="0" Grid.Row="1"></Border>
+			<Border Grid.Column="1" Grid.Row="1"></Border>
+			<Border Grid.Column="2" Grid.Row="1"></Border>
+			<Border Grid.Column="0" Grid.Row="2"></Border>
+			<Border Grid.Column="1" Grid.Row="2"></Border>
+			<Border Grid.Column="2" Grid.Row="2"></Border>
+			<Border Grid.Column="0" Grid.Row="3"></Border>
+			<Border Grid.Column="1" Grid.Row="3"></Border>
+			<Border Grid.Column="2" Grid.Row="3"></Border>
+			<Border Grid.Column="0" Grid.Row="4"></Border>
+			<Border Grid.Column="1" Grid.Row="4"></Border>
+			<Border Grid.Column="2" Grid.Row="4"></Border>
+			<Border Grid.Column="0" Grid.Row="5"></Border>
+			<Border Grid.Column="1" Grid.Row="5"></Border>
+			<Border Grid.Column="2" Grid.Row="5"></Border>
+			<Border Grid.Column="0" Grid.Row="6"></Border>
+			<Border Grid.Column="1" Grid.Row="6"></Border>
+			<Border Grid.Column="2" Grid.Row="6"></Border>
+			<Border Grid.Column="0" Grid.Row="7"></Border>
+			<Border Grid.Column="1" Grid.Row="7"></Border>
+			<Border Grid.Column="2" Grid.Row="7"></Border>
+			<Border Grid.Column="0" Grid.Row="8"></Border>
+			<Border Grid.Column="1" Grid.Row="8"></Border>
+			<Border Grid.Column="2" Grid.Row="8"></Border>
+			<Border Grid.Column="0" Grid.Row="9"></Border>
+			<Border Grid.Column="1" Grid.Row="9"></Border>
+			<Border Grid.Column="2" Grid.Row="9"></Border>
+			<Border Grid.Column="0" Grid.Row="10"></Border>
+			<Border Grid.Column="1" Grid.Row="10"></Border>
+			<Border Grid.Column="2" Grid.Row="10"></Border>
+			<Border Grid.Column="0" Grid.Row="11"></Border>
+			<Border Grid.Column="1" Grid.Row="11"></Border>
+			<Border Grid.Column="2" Grid.Row="11"></Border>
+			<Border Grid.Column="0" Grid.Row="12"></Border>
+			<Border Grid.Column="1" Grid.Row="12"></Border>
+			<Border Grid.Column="2" Grid.Row="12"></Border>
+			<Border Grid.Column="0" Grid.Row="13"></Border>
+			<Border Grid.Column="1" Grid.Row="13"></Border>
+			<Border Grid.Column="2" Grid.Row="13"></Border>
+			<Border Grid.Column="0" Grid.Row="14"></Border>
+			<Border Grid.Column="1" Grid.Row="14"></Border>
+			<Border Grid.Column="2" Grid.Row="14"></Border>
+			<Border Grid.Column="0" Grid.Row="15"></Border>
+			<Border Grid.Column="1" Grid.Row="15"></Border>
+			<Border Grid.Column="2" Grid.Row="15"></Border>
+			<Border Grid.Column="0" Grid.Row="16"></Border>
+			<Border Grid.Column="1" Grid.Row="16"></Border>
+			<Border Grid.Column="2" Grid.Row="16"></Border>
+			<Border Grid.Column="0" Grid.Row="17"></Border>
+			<Border Grid.Column="1" Grid.Row="17"></Border>
+			<Border Grid.Column="2" Grid.Row="17"></Border>
+			<Border Grid.Column="0" Grid.Row="18"></Border>
+			<Border Grid.Column="1" Grid.Row="18"></Border>
+			<Border Grid.Column="2" Grid.Row="18"></Border>
+			<Border Grid.Column="0" Grid.Row="19"></Border>
+			<Border Grid.Column="1" Grid.Row="19"></Border>
+			<Border Grid.Column="2" Grid.Row="19"></Border>
+		</Grid>
+	</Grid>
+</Page>
